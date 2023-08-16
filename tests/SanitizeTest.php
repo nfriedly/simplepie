@@ -19,7 +19,7 @@ EOT
             ,
             $sanitize->sanitize(
                 <<<EOT
-&#60;head&#62; &amp; &lt;body&gt; /\ ' === &apos; &#38; " === &quot;. Sbohem bez šátečku! Тут был Лёха.<script>alert('XSS')</script>
+&#60;head&#62; &amp; &lt;body&gt; /\ ' === &apos; &#38; " === &quot;. Sbohem bez šátečku! Тут был Лёха.<script>var htmlString="<p>test</p>"; alert('XSS')</script>
 EOT
                 ,
                 SIMPLEPIE_CONSTRUCT_MAYBE_HTML
